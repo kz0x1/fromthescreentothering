@@ -1,3 +1,15 @@
+local function generateRandomString(length)
+    local charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+    local randomString = ""
+    for i = 1, length do
+        local randomIndex = math.random(1, #charset)
+        randomString = randomString .. charset:sub(randomIndex, randomIndex)
+    end
+    return randomString
+end
+
+identifyexecutor() = function() return 'Skidsploit', 'v0.6.9' end
+
 local exec = Instance.new("ScreenGui")
 local Executor = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
