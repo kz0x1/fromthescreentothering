@@ -8,7 +8,7 @@ local function generateRandomString(length)
     return randomString
 end
 
-identifyexecutor() = function() return 'Skidsploit', 'v0.6.9' end
+function identifyexecutor() return 'Skidsploit', 'v0.6.9' end
 
 local exec = Instance.new("ScreenGui")
 local Executor = Instance.new("Frame")
