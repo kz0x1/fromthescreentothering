@@ -1,3 +1,4 @@
+math.randomseed(tick())
 local function generateRandomString(length)
     local charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
     local randomString = ""
