@@ -214,8 +214,14 @@ end
 coroutine.wrap(IQOSZN_fake_script)()
 local function MVBS_fake_script() -- Execute.LocalScript 
 	Execute.MouseButton1Click:Connect(function()
-		assert(loadstring(Editor.Text))()
+    		local success, err = pcall(function()
+        		assert(loadstring(Editor.Text))()
+    		end)
+    		if not success then
+        		warn("Execution Error: " .. tostring(err))
+    		end
 	end)
+
 end
 coroutine.wrap(MVBS_fake_script)()
 local function VLSJXUV_fake_script() -- Exit.LocalScript 
