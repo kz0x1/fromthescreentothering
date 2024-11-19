@@ -36,12 +36,12 @@ local ImageLabel = Instance.new("ImageLabel")
 local Minimize = Instance.new("TextButton")
 local ImageLabel_2 = Instance.new("ImageLabel")
 
-exec.Name = math.random(9999,99999) -- "exec"
+exec.Name = generateRandomString(math.random(1,10)) -- -- "exec"
 exec.Parent = gethui() or (game:GetService("CoreGui") or game:GetService("Players").LocalPlayer:FindFirstChild("PlayerGui"))
 exec.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 exec.ResetOnSpawn = false
 
-Executor.Name = math.random(9999,99999) -- math.random(99999,999999)
+Executor.Name = generateRandomString(math.random(1,10)) -- -- math.random(99999,999999)
 Executor.Parent = exec
 Executor.Active = true
 Executor.BackgroundColor3 = Color3.fromRGB(12, 4, 20)
@@ -53,7 +53,7 @@ Executor.Size = UDim2.new(0, 481, 0, 287)
 
 UICorner.Parent = Executor
 
-Down.Name = math.random(9999,99999) -- "Down"
+Down.Name = generateRandomString(math.random(1,10)) -- -- "Down"
 Down.Parent = Executor
 Down.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Down.BackgroundTransparency = 0.700
@@ -65,7 +65,7 @@ UICorner_2.Parent = Down
 UIAspectRatioConstraint.Parent = Down
 UIAspectRatioConstraint.AspectRatio = 80.000
 
-EditorScroller.Name = math.random(9999,99999) -- "EditorScroller"
+EditorScroller.Name = generateRandomString(math.random(1,10)) -- -- "EditorScroller"
 EditorScroller.Parent = Executor
 EditorScroller.Active = true
 EditorScroller.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -75,7 +75,7 @@ EditorScroller.Position = UDim2.new(0, 9, 0, 47)
 EditorScroller.Size = UDim2.new(0, 465, 0, 191)
 EditorScroller.ScrollBarThickness = 5
 
-Editor.Name = math.random(9999,99999) -- "Editor"
+Editor.Name = generateRandomString(math.random(1,10)) -- -- "Editor"
 Editor.Parent = EditorScroller
 Editor.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Editor.BackgroundTransparency = 1.000
@@ -94,7 +94,7 @@ UIListLayout.Parent = EditorScroller
 UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 
-Clear.Name = math.random(9999,99999) -- "Clear"
+Clear.Name = generateRandomString(math.random(1,10)) -- -- "Clear"
 Clear.Parent = Executor
 Clear.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Clear.BackgroundTransparency = 0.600
@@ -110,7 +110,7 @@ UICorner_3.Parent = Clear
 UIAspectRatioConstraint_2.Parent = Clear
 UIAspectRatioConstraint_2.AspectRatio = 4.080
 
-Copy.Name = math.random(9999,99999) -- "Copy"
+Copy.Name = generateRandomString(math.random(1,10)) -- -- "Copy"
 Copy.Parent = Executor
 Copy.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Copy.BackgroundTransparency = 0.600
@@ -126,7 +126,7 @@ UICorner_4.Parent = Copy
 UIAspectRatioConstraint_3.Parent = Copy
 UIAspectRatioConstraint_3.AspectRatio = 4.080
 
-Execute.Name = math.random(9999,99999) -- "Execute"
+Execute.Name = generateRandomString(math.random(1,10)) -- -- "Execute"
 Execute.Parent = Executor
 Execute.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Execute.BackgroundTransparency = 0.600
@@ -142,7 +142,7 @@ UICorner_5.Parent = Execute
 UIAspectRatioConstraint_4.Parent = Execute
 UIAspectRatioConstraint_4.AspectRatio = 4.080
 
-TopBar.Name = math.random(9999,99999) -- "TopBar"
+TopBar.Name = generateRandomString(math.random(1,10)) -- -- "TopBar"
 TopBar.Parent = Executor
 TopBar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TopBar.BackgroundTransparency = 0.600
@@ -158,7 +158,7 @@ UICorner_6.Parent = TopBar
 UIAspectRatioConstraint_5.Parent = TopBar
 UIAspectRatioConstraint_5.AspectRatio = 13.743
 
-Exit.Name = math.random(9999,99999) -- "Exit"
+Exit.Name = generateRandomString(math.random(1,10)) -- -- "Exit"
 Exit.Parent = TopBar
 Exit.BackgroundColor3 = Color3.fromRGB(12, 4, 20)
 Exit.BackgroundTransparency = 0.500
@@ -179,7 +179,7 @@ ImageLabel.Image = "http://www.roblox.com/asset/?id=8650484523"
 ImageLabel.ImageColor3 = Color3.fromRGB(12, 4, 20)
 ImageLabel.ImageTransparency = 0.500
 
-Minimize.Name = math.random(9999,99999) -- "Minimize"
+Minimize.Name = generateRandomString(math.random(1,10)) -- -- "Minimize"
 Minimize.Parent = TopBar
 Minimize.BackgroundColor3 = Color3.fromRGB(12, 4, 20)
 Minimize.BackgroundTransparency = 0.500
